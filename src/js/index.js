@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     // API not supported
-    document.querySelector(".battery-precentage").innerText =
-      "Battery Status API not supported.";
+    document.querySelector(".battery-status").innerText =
+      "Device Not Supported. :(";
   }
 
   function updateBatteryInfo(battery) {
