@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       status.innerText = battery.charging ? "⚡Charging" : "🔌On Battery";
     }
-    status.innerText += ` ${battery.level * 100}%`;
+    status.innerText += ` ${Math.floor(battery.level * 100)}%`;
     batteryBody.setAttribute("style", `width:${battery.level * 200}px`);
   }
 });
