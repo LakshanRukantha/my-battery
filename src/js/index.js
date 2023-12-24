@@ -25,14 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let batteryHead = document.querySelector(".battery-head");
     let status = document.querySelector(".battery-status");
 
-    battery.level = 1;
-
     if (battery.level <= 0.2) {
       batteryBody.classList.toggle("bg-red-500");
       batteryHead.classList.toggle("bg-red-500");
       status.innerText = battery.charging ? "⚡Charging" : "🪫Battery Low";
-    }
-    if (battery.level == 1) {
+    } else if (battery.level == 1) {
       status.innerText = "🔋Battery Full";
     } else {
       status.innerText = battery.charging ? "⚡Charging" : "🔌On Battery";
