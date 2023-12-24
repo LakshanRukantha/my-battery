@@ -13,7 +13,24 @@
     />
   </head>
   <body>
-    <h1 class="text-4xl text-center">My Battery</h1>
+    <main class="h-screen flex items-center justify-center">
+      <div class="relative w-[225px] h-24 flex items-center justify-between">
+        <div
+          class="battery-body relative w-[200px] h-24 rounded-md outline outline-2 outline-gray-400"
+        >
+          <div
+            class="battery-precentage bg-green-500 rounded-md h-24 flex items-center"
+          >
+            <span class="battery-status text-xl text-gray-900 absolute w-full text-center"
+              ></span
+            >
+          </div>
+        </div>
+        <div
+          class="battery-head h-12 w-[25px] bg-green-500 rounded-e-md border border-y-2 border-r-2 border-gray-400"
+        ></div>
+      </div>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>
