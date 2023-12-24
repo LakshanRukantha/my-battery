@@ -552,6 +552,10 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .flex {
   display: flex;
 }
